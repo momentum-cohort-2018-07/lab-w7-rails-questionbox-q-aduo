@@ -32,9 +32,9 @@ On the second day, your application should:
 
 Send an email to a user when someone posts an answer to a question.
 
-Paginate the index of questions with Kaminari.
+DONE - Paginate the index of questions with Kaminari.
 
-Allow a user to upload a profile photo.
+DONE - Allow a user to upload a profile photo.
 
 Allow the original author of the question to mark an answer as accepted.
 
