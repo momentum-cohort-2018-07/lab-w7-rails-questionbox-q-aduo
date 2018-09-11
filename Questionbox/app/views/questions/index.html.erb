@@ -26,12 +26,14 @@
 <%= link_to 'New Question', new_question_path, class: "button" %>
 
     <% @questions.each do |question| %>
+
     <div class="container">
       <div class="question-body">
       <p><%= question.body %></p>
       <p class="created">created by: <%= question.user.username %><br>
         created on: <%= question.created_at.to_formatted_s(:long_ordinal) %>
       </p>
+
       </div>
       <%= link_to 'Show', question_path(question), class: "button" %>
       <% if current_user && current_user.id == question.user_id %>
