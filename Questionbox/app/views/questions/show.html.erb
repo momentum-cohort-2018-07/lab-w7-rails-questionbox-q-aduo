@@ -34,8 +34,10 @@
       <strong></strong>
       <%= answer.body %>
     </p>
-    <div class="created">answered by: <%= answer.user.username %></div>
-    <div class="created">answered on: <%= answer.created_at.to_formatted_s(:long_ordinal) %></div>
+    <div class="created">answered by: <%= answer.user.username %>
+    </div>
+    <div class="created">answered on: <%= answer.created_at.to_formatted_s(:long_ordinal)   %>
+    </div>
   </div>
   <% end %>
 </div>
