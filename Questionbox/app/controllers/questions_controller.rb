@@ -2,6 +2,7 @@ class QuestionsController < ApplicationController
 
   def index
     @questions = Question.all
+    # @questions = Question.order("published_at DESC")
   end
 
   def show
