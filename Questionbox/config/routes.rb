@@ -3,10 +3,12 @@ Rails.application.routes.draw do
 
   resource :session, only: [:new, :create, :destroy]
   resources :users
-  resources :questions
+  resources :questions 
+  resources :answers
+  
   
   root 'questions#index'
-  resources :answers
+  
 
   # resources :posts do
   #   member do

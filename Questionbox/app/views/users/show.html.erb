@@ -7,10 +7,10 @@
     </tr>
   </thead>
   <tbody>
-  <% @user.each do |user| %>
+  <% @user.questions.each do |question| %>
     <tr>
-      <td><%= user.username %></td>
-      <td><%= user.question %></td>
+      <td><%= @user.username %></td>
+      <td><%= question.body %></td>
     </tr>
   <% end %>
   </tbody>
