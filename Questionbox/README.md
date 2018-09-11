@@ -2,7 +2,7 @@
 Description
 For this two-day project, your team will build a question and answer platform, similar to Stack Overflow in format, although you can theme it however you like. After a few days, your application will allow people to ask questions, receive answers, and mark an answer as valid. This application should have a front end.
 
-The application should be styled with Bootstrap or another css framework.
+DONE - The application should be styled with Bootstrap or another css framework.
 
 On the first day, your application should:
 
@@ -29,9 +29,13 @@ DONE - A question can be deleted by its author, whether answered or unanswered. 
 On the second day, your application should:
 
 Send an email to a user when someone posts an answer to a question.
+
 Paginate the index of questions with Kaminari.
+
 Allow a user to upload a profile photo.
+
 Allow the original author of the question to mark an answer as accepted.
+
 Extra features and challenges
 Use AJAX to update the page when a user submits an answer to a question.
 Allow an unanswered question to be edited.
@@ -43,8 +47,7 @@ To send email from your production app you'll need an add-on for Heroku (e.g. Se
 Send an email to a user to reset their password if they have forgotten it, and allow them to reset it.
 What else would make this application better?
 
-
-
+***************************************************
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
