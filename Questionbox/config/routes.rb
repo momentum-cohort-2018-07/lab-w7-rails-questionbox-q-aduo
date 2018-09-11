@@ -3,9 +3,9 @@ Rails.application.routes.draw do
 
   resource :session, only: [:new, :create, :destroy]
   resources :users
-
-  root 'questions#index'
   resources :questions
+  
+  root 'questions#index'
   resources :answers
 
   # resources :posts do
