@@ -2,7 +2,7 @@
 Description
 For this two-day project, your team will build a question and answer platform, similar to Stack Overflow in format, although you can theme it however you like. After a few days, your application will allow people to ask questions, receive answers, and mark an answer as valid. This application should have a front end.
 
-The application should be styled with Bootstrap or another css framework.
+DONE - The application should be styled with Bootstrap or another css framework.
 
 On the first day, your application should:
 
