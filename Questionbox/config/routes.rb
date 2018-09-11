@@ -6,14 +6,6 @@ Rails.application.routes.draw do
   resources :questions 
   resources :answers
   
-  
   root 'questions#index'
-  
-
-  # resources :posts do
-  #   member do
-  #     put "like" => "posts#vote"
-  #   end
-  # end
 
 end
