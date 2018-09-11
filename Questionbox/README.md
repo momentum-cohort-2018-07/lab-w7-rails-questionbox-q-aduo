@@ -8,7 +8,9 @@ On the first day, your application should:
 
 DONE - Allow a user to create a question.
 
-That question should allow for several paragraphs of formattable text. Allow your users to use Markdown for authoring questions. Redcarpet is a good gem for rendering Markdown as HTML. This blog post may help as well.
+DONE - That question should allow for several paragraphs of formattable text. 
+
+Allow your users to use Markdown for authoring questions. Redcarpet is a good gem for rendering Markdown as HTML. This blog post may help as well.
 
 DONE - Allow questions to have answers.
 
@@ -20,7 +22,7 @@ DONE - Every question and every answer should be associated with a user.
 
 DONE - Allow an authenticated user to create a question or answer an existing question.
 
-A user should be able to view all their questions on a user profile page.
+DONE - A user should be able to view all their questions on a user profile page.
 
 Questions cannot be edited once they have been asked (note: allowing editing of unanswered questions is listed below as an extra challenge).
 
