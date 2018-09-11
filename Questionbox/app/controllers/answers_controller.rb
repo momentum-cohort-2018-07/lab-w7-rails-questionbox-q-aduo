@@ -14,6 +14,8 @@ class AnswersController < ApplicationController
     @answer = Answer.new(answer_params)
 
     if @answer.save
+      NotifierMailer.notify(@user).deliver_now
+    elsif
       redirect_to question_path(@answer.question.id)
     else
       redirect_to question_path(@answer.question.id)
