@@ -3,12 +3,14 @@
   <thead>
     <tr>
       <th>Username</th>
+      <th>Question</th>
     </tr>
   </thead>
   <tbody>
   <% @user.each do |user| %>
     <tr>
       <td><%= user.username %></td>
+      <td><%= user.question %></td>
     </tr>
   <% end %>
   </tbody>
