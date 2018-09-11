@@ -11,6 +11,7 @@
   <div>
     <h1>Q & A Arena</h1>
       <p>Your Questions - Answered Here</p>
+      <%= link_to "Show My Questions", user_path(session[:user_id]), class: "button" %>
   </div>
 </header>
   <% if flash[:notice] %>
