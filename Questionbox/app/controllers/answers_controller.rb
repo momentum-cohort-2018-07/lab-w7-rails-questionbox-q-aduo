@@ -14,7 +14,7 @@ class AnswersController < ApplicationController
     @answer = Answer.new(answer_params)
 
     if @answer.save
-      redirect_to question_path(@answer.quesiton.id)
+      redirect_to question_path(@answer.question.id)
     else
       redirect_to question_path(@answer.question.id)
       flash[:comment] ="Answer can't be blank."
@@ -46,7 +46,7 @@ class AnswersController < ApplicationController
   private
     #need to add user_id
     def answer_params
-      params.require(:answer).permit(:question_id, :body)
+      params.require(:answer).permit(:question_id, :body, :user_id)
     end
 
 end
