@@ -12,4 +12,24 @@
  */
 
  @import 'bootstrap';
- @import 'questions'
+ @import 'questions';
+ @import 'users';
+ @import 'answers';
+
+  body {
+    background-image: url("parchment.jpeg");
+    background-image: repeat;
+  }
+
+ .question-body {
+  border: 1px solid black;
+  padding: 1em;
+}
+
+.table {
+  border-bottom: 1px solid black;
+}
+
+.heading {
+  text-align: center;
+}
