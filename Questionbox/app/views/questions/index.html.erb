@@ -12,12 +12,10 @@
 <%= link_to "Login", new_session_path, class: "button" %>
 <% end %>
   
-<h1>Q & A Arena</h1>   
-<h2><strong>Your Questions - Answered Here</strong></h2>
+<h1 class = "heading">Q & A Arena</h1>   
+<h2 class = "heading">Your Questions - Answered Here</h2>
 </div>
 </header>
-
-<h2>Listing Questions</h2>
 
 <%= paginate @questions %>
 <%= page_entries_info @questions %>
