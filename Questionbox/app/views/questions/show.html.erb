@@ -42,15 +42,6 @@
   <% end %>
 <div>
 
-<h1><%= @question.title %></h1>
-<hr />
-
-<p>
-  <%= markdown(@question.body) %>
-</p>
-<h4>Published <%= time_ago_in_words @question.published_at %> ago</h4>
-<%= link_to "Back to Questions", questions_path %>
-
 
 <div class="show-links">
 <%= link_to 'Add an answer', new_answer_path(question_id: @question.id), class: "button" %>
