@@ -44,7 +44,7 @@ class QuestionsController < ApplicationController
   private
   #need to add user_id
     def question_params
-       params.require(:quesiton).permit(:body, user_id)
+       params.require(:question).permit(:body, :user_id)
     end
 
 end
