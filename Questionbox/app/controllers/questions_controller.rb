@@ -1,8 +1,9 @@
 class QuestionsController < ApplicationController
 
   def index
-    @questions = Question.all
-    # @questions = Question.order("published_at DESC")
+
+    @questions = Question.page(params[:page])
+
   end
 
   def show
