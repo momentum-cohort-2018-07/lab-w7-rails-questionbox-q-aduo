@@ -10,7 +10,7 @@ DONE - Allow a user to create a question.
 
 DONE - That question should allow for several paragraphs of formattable text. 
 
-Allow your users to use Markdown for authoring questions. Redcarpet is a good gem for rendering Markdown as HTML. This blog post may help as well.
+DEFER - Allow your users to use Markdown for authoring questions. Redcarpet is a good gem for rendering Markdown as HTML. This blog post may help as well.
 
 DONE - Allow questions to have answers.
 

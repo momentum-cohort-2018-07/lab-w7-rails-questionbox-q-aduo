@@ -27,26 +27,7 @@ class AnswersController < ApplicationController
     @answer = Answer.find(params[:id])
   end
 
-
-  # def validate
-  #   @quesiton = answer.find(params[:id])  
-  #   respond_to :js, :html
-  #   if current_user   
-  #     if !current_user.liked? @answer
-  #       @answer.liked_by current_user
-  #       redirect_to @answer
-  #     elsif current_user.liked? @answer
-  #       @answer.unliked_by current_user
-  #       redirect_to @answer
-  #      end
-  #   else
-  #     flash[:notice] = 'Only users can validate, Please login'
-  #     redirect_to @answer
-  #   end
-  # end
-
   private
-    #need to add user_id
     def answer_params
       params.require(:answer).permit(:question_id, :body, :user_id)
     end
