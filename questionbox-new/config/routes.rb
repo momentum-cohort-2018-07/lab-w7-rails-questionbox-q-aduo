@@ -8,4 +8,11 @@ Rails.application.routes.draw do
   
   root 'questions#index'
 
+  namespace :api do
+    resources :users
+      resources :questions do
+        resources :answers
+      end
+      resource :session, only: :create
+  end
 end
