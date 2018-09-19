@@ -1,5 +1,5 @@
 class Api::UsersController < ApplicationController
-  # skip_before_action :verify_authentication, only: [:create]
+  skip_before_action :verify_authentication, only: [:create], raise: false
   before_action :set_user, only: [:show, :destroy, :update]
 
   def index
@@ -16,13 +16,12 @@ class Api::UsersController < ApplicationController
     end
   end
 
-    def destroy
-      @user.destroy
-    end
+def destroy
+  @user.destroy
+end
   
   private
     def users_params
       params.permit(:user, :password)
     end
-
 end

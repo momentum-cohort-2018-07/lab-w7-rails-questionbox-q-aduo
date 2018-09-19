@@ -53,10 +53,10 @@ class Api::QuestionsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    # def set_user
-    #   # @user = User.find(params["user_id"])
-    # end
+    Use callbacks to share common setup or constraints between actions.
+    def set_user
+      @user = User.find(params["user_id"])
+    end
 
     def set_question
       @question= Question.find(params["id"])
