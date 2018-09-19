@@ -1,5 +1,5 @@
 class Api::QuestionsController < ApplicationController
-  before_action :verify_authentication
+  before_action :verify_authenticity_token
   before_action :set_user,  only: [:index, :create, :show, :update, :destroy]
   before_action :set_question, only: [:show, :update, :destroy]
   
@@ -33,8 +33,8 @@ class Api::QuestionsController < ApplicationController
       render json: @question
     else
       render json: { error: "Invalid question" }, status: :unauthorized
+    end
   end
- end
 
   def update
     if @question.update(question_params)
@@ -53,7 +53,7 @@ class Api::QuestionsController < ApplicationController
   end
 
   private
-    Use callbacks to share common setup or constraints between actions.
+  #Use callbacks to share common setup or constraints between actions.
     def set_user
       @user = User.find(params["user_id"])
     end
@@ -66,5 +66,4 @@ class Api::QuestionsController < ApplicationController
     def question_params
       params.require(:question).permit(:question)
     end
-
 end

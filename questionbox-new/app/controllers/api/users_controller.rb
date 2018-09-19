@@ -1,4 +1,5 @@
 class Api::UsersController < ApplicationController
+  
   skip_before_action :verify_authentication, only: [:create], raise: false
   before_action :set_user, only: [:show, :destroy, :update]
 
